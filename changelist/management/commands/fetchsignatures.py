@@ -51,7 +51,7 @@ class Command(BaseCommand):
             for s in data['signatures']:
                 Signature.objects.create(
                     petition=petition,
-                    country=s['country_name'],
+                    country=s['country_code'],
                     name=s['name'],
                     city=s['city']
                 )
